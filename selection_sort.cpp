@@ -18,7 +18,7 @@ int main()
 {
 	int values[SIZE] = { 9, 2, 0, 11, 5 };
 
-	cout << "The values before the selection sort is performed are:" << endl;
+	//cout << "The values before the selection sort is performed are:" << endl;
 	//displayArray(values, SIZE);
 
 	selectionSortArray(values, SIZE);
@@ -85,9 +85,6 @@ void selectionSortArray(int array[], int elems)
                         cout << endl;*/
 
 			}
-			for (int count = 0; count < elems; count++)
-                        cout << array[count] << " ";
-                        cout << endl;
 
 		}
 
