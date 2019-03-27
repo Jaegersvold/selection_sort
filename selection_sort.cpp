@@ -18,7 +18,7 @@ int main()
 {
 	int values[SIZE] = { 9, 2, 0, 11, 5 };
 
-	cout << "The values before the selection sort is performed are:" << endl;
+	//cout << "The values before the selection sort is performed are:" << endl;
 	//displayArray(values, SIZE);
 
 	selectionSortArray(values, SIZE);
@@ -79,17 +79,10 @@ void selectionSortArray(int array[], int elems)
 			{
 				maxValue = array[index];
 				maxCount = index;
-
-				/*for (int count = 0; count < elems; count++)
-                        cout << array[count] << " ";
-                        cout << endl;*/
-
 			}
-			for (int count = 0; count < elems; count++)
-                        cout << array[count] << " ";
-                        cout << endl;
-
 		}
+
+		displayArray(array, elems);
 
 		// the following two statements exchange the value of the
 		// element currently needing the largest value found in the
